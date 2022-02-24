@@ -1,10 +1,10 @@
 fun readNaturalNumber():Int{
-    var NaturalNumber = 0
-    while(NaturalNumber < 1)
+    var naturalNumber = 0
+    while(naturalNumber < 1)
     {
         try {
-            NaturalNumber = readLine()!!.toInt()
-            if(NaturalNumber < 0)
+            naturalNumber = readLine()!!.toInt()
+            if(naturalNumber < 0)
                 throw Exception("Кто-то слишком умный!")
         }
         catch (e:Exception)
@@ -12,10 +12,10 @@ fun readNaturalNumber():Int{
             println("Кажется, ты ошиблась, попробуй ещё раз!")
         }
     }
-    return NaturalNumber
+    return naturalNumber
 }
 
-private fun LKG() {
+private fun linearGenerator() {
     val a = 567
     val b = 91223
     var x: Int
@@ -40,6 +40,6 @@ private fun LKG() {
 }
 
 fun main(){
-    LKG()
+    linearGenerator()
 }
 
